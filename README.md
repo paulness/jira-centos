@@ -136,4 +136,7 @@ You should ensure these files are saved / persisted on reboot of the server
 ## Appendix
 
 https://confluence.atlassian.com/jirakb/how-do-i-use-port-80-or-443-on-my-jira-server-as-a-non-root-user-on-linux-890079490.html
+
 https://confluence.atlassian.com/adminjiraserver071/unattended-installation-855475683.html
+
+https://confluence.atlassian.com/confkb/how-to-clear-confluence-plugins-cache-297664846.html
