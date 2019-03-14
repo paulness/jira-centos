@@ -141,6 +141,14 @@ You should ensure these files are saved / persisted on reboot of the server
 /opt/atlassian/jira/bin/start-jira.sh
 ```
 
+## OKTA
+
+A list of OKTA gotchas
+
+- The first user you create in JIRA before enabling OKTA should match a username in OKTA
+- Groups in OKTA must match the exact name of groups in JIRA
+- Users must be removed and readded from OKTA (in the case of a new JIRA install?)
+
 ## Appendix
 
 https://confluence.atlassian.com/jirakb/how-do-i-use-port-80-or-443-on-my-jira-server-as-a-non-root-user-on-linux-890079490.html
