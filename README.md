@@ -4,6 +4,14 @@ JIRA Server 8.0.2 interactive installation instructions on CentOS 7 VM.
 
 ## Optional prerequirements
 
+### Create the cloud SQL postgres database
+
+```
+CREATE DATABASE jiradb WITH ENCODING 'UNICODE' LC_COLLATE 'C' LC_CTYPE 'C' TEMPLATE template0;
+GRANT ALL PRIVILEGES ON DATABASE jiradb TO atlassianusr
+```
+[More on this here](https://confluence.atlassian.com/doc/database-setup-for-postgresql-173244522.html)
+
 ### Format and mount external drive (TODO)
 
 https://www.techotopia.com/index.php/Adding_a_New_Disk_Drive_to_a_CentOS_System
