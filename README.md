@@ -26,6 +26,12 @@ mkdir -p /atlassian/jira/
 mount -v -o remount,rw -force /dev/sdb1 /atlassian/jira
 ```
 
+### Grant access to entire volume to JIRA user (TODO)
+
+```
+chown -R daemon:daemon /atlassian/jira/
+```
+
 ### Enable IP of JIRA to access Cloud Postgres SQL (TODO)
 
 ## Install JIRA from the user folder (Interactive CLI)
