@@ -1,0 +1,12 @@
+#install4j response file for JIRA Service Desk 4.0.2
+launch.application$Boolean=false
+rmiPort$Long=8005
+app.jiraHome=/var/atlassian/application-data/servicedesk
+app.install.service$Boolean=false
+existingInstallationDir=/opt/atlassian/jira
+sys.confirmedUpdateInstallationString=false
+sys.languageId=en
+sys.installationDir=/opt/atlassian/servicedesk
+executeLauncherAction$Boolean=true
+httpPort$Long=8080
+portChoice=default
