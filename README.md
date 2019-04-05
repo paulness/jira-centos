@@ -6,6 +6,21 @@ JIRA Server 8.0.2 interactive installation instructions on CentOS 7 VM.
 
 ### Create the cloud SQL postgres database
 
+Install postgres to get psql
+
+```
+brew install postgres
+```
+
+Connect to the database
+
+```
+gcloud config set project YOUR_PROJECT
+gcloud sql connect YOUR_DATABASE --user=postgres
+```
+
+Create the table
+
 ```
 CREATE DATABASE jiradb WITH ENCODING 'UNICODE' LC_COLLATE 'C' LC_CTYPE 'C' TEMPLATE template0;
 GRANT ALL PRIVILEGES ON DATABASE jiradb TO atlassianusr
