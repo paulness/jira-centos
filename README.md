@@ -22,7 +22,7 @@ gcloud sql connect YOUR_DATABASE --user=postgres
 Drop the database (if messed up)
 
 ```
-DROP DATABASE [IF EXISTS] jiradb;
+DROP DATABASE jiradb;
 ```
 
 Create the table
