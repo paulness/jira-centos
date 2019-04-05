@@ -23,7 +23,7 @@ Create the table
 
 ```
 CREATE DATABASE jiradb WITH ENCODING 'UNICODE' LC_COLLATE 'C' LC_CTYPE 'C' TEMPLATE template0;
-GRANT ALL PRIVILEGES ON DATABASE jiradb TO atlassianusr
+GRANT ALL PRIVILEGES ON DATABASE jiradb TO atlassianusr;
 ```
 [More on this here](https://confluence.atlassian.com/doc/database-setup-for-postgresql-173244522.html)
 
