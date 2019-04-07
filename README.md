@@ -25,12 +25,26 @@ Drop the database (if messed up)
 DROP DATABASE jiradb;
 ```
 
-Create the table
+Create the database for JIRA
 
 ```
 CREATE DATABASE jiradb WITH ENCODING 'UNICODE' LC_COLLATE 'C' LC_CTYPE 'C' TEMPLATE template0;
 GRANT ALL PRIVILEGES ON DATABASE jiradb TO atlassianusr;
 ```
+
+Create the database for Confluence
+
+```
+CREATE DATABASE "confluencedb"
+    WITH 
+    ENCODING 'UTF8'
+    LC_COLLATE = 'en_US.UTF-8'
+    LC_CTYPE = 'en_US.UTF-8'
+    TEMPLATE template0;
+GRANT ALL PRIVILEGES ON DATABASE confluencedb TO atlassianusr;
+    
+```
+
 [More on this here](https://confluence.atlassian.com/doc/database-setup-for-postgresql-173244522.html)
 
 ### Format and mount external drive (TODO)
